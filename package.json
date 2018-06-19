@@ -4,13 +4,13 @@
   "description": "Wordpress Theme framework",
   "main": "index.js",
   "scripts": {
-    "postinstall": "gulp copy-assets"
+    "postinstall": "gulp copy-assets",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
-
-  "engines" : { 
-  "npm" : ">=2.1.8" 
+  "engines": {
+    "npm": ">=2.1.8"
   },
-
   "repository": {
     "type": "git",
     "url": "https://github.com/holger1411/understrap.git"
@@ -48,7 +48,9 @@
     "gulp-watch": "^4.3.11",
     "merge2": "^1.0.3",
     "run-sequence": "^1.2.2",
-    "undescores-for-npm": "^1.0.0"
+    "undescores-for-npm": "^1.0.0",
+    "snyk": "^1.83.0"
   },
-  "devDependencies": {}
+  "devDependencies": {},
+  "snyk": true
 }
